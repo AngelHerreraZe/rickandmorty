@@ -1,0 +1,155 @@
+.body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  background-color: #05292e;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  background-color: #062226;
+  width: 30rem;
+  color: #FBFBFB;
+  gap: .3rem;
+}
+
+.card-name{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.card-header{
+  position: relative;
+}
+
+.card-item{
+  display: flex;
+  flex-direction: column;
+}
+
+.card-item p{
+  font-weight: bold;
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  position: relative;
+  gap: 1rem;
+  font-size: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.card-img{
+  width: 100%;
+}
+
+.card b{
+  color: #7E7E7E;
+}
+
+.card-body hr{
+  color: #084851;
+}
+
+.status{
+  height: 1.5rem;
+  width: 8rem;
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  background: #062226;
+  border-radius: 0 12px 12px 0;
+  padding-left: 2rem;
+  font-size: 1.1rem;
+}
+
+.circle-Alive{
+  width: 0;
+  height: 0;
+  border: .5rem solid green;
+  border-radius: 50%;
+  position: absolute;
+  left: .4rem;
+  top: .2rem;
+}
+
+.circle-Dead{
+  width: 0;
+  height: 0;
+  border: .5rem solid red;
+  border-radius: 50%;
+  position: absolute;
+  left: .4rem;
+  top: .2rem;
+}
+
+.circle-unknown{
+  width: 0;
+  height: 0;
+  border: .5rem solid grey;
+  border-radius: 50%;
+  position: absolute;
+  left: .4rem;
+  top: .2rem;
+}
+
+.header{
+  width: 100%;
+  position:relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  height: 45rem;
+  background-image: url(/src/assets/header.png);
+}
+
+.text{
+  position: absolute;
+  width: 40rem;
+  top: 35%;
+  left: 35%;
+}
+
+.location-box{
+  margin: 2rem 0;
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  background: #062226;
+  color: white;
+  font-size: 1.2rem;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.residents-body{
+  margin: 2rem 0;
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+.search{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 60%;
+  color: white;
+}
+
+.search-bar{
+  width: 80%;
+  color: white;
+}
+
