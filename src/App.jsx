@@ -49,7 +49,7 @@ function App() {
         <div className='residents-body'>
           {
             residents.map(resident =>(
-              <ResidentInfo resident={resident} key={resident.id}/>
+              <ResidentInfo resident={resident} key={resident}/>
             ))
           }
         </div>
