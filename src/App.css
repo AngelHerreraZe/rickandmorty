@@ -190,10 +190,15 @@
     font-size: 1.2rem;
   }
   .residents-body{
+    width: 80%;
     grid-template-columns: repeat(1,1fr);
   }
 
   .card {
-    width: 60vw;
+    width: 100%;
+  }
+
+  .location-box{
+    width: 80%;
   }
 }
