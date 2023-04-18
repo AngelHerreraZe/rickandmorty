@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   background-color: #062226;
-  width: 30rem;
+  width: 80%;
   color: #FBFBFB;
   gap: .3rem;
 }
@@ -153,3 +153,47 @@
   color: white;
 }
 
+.pagination{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.btn-pagination{
+  width: 6rem;
+  height: 3rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #16818f;
+  color: black;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 720px) {
+  .text{
+    width: 60%;
+    top: calc(50% - 55px);
+    left: 20%;
+  }
+
+  .header{
+    height: 10rem;
+  }
+
+  .location-box{
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1.2rem;
+  }
+  .residents-body{
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .card {
+    width: 60vw;
+  }
+}

@@ -11,6 +11,17 @@ function App() {
   const [residents, setResidents] = useState([]);
   const [searchId, setSearchId] = useState("");
 
+  const [page, setPage] = useState(1);
+  const resultsPerPage = 10;
+  const lastIndex = page * resultsPerPage;
+  const firstIndex = lastIndex - resultsPerPage;
+  const resultsPaginated = residents.slice(firstIndex, lastIndex);
+  const totalPages = Math.ceil(residents.length / resultsPerPage);
+  const pages = [];
+  for (let i = 0; i <= totalPages; i++){
+    pages.push(i);
+  }
+
   useEffect(() => {
     const randomId = Math.floor(Math.random() * 126) + 1;
 
@@ -48,10 +59,15 @@ function App() {
         <button onClick={searchLocation}>Search location</button>
         <div className='residents-body'>
           {
-            residents.map(resident =>(
+            resultsPaginated.map(resident =>(
               <ResidentInfo resident={resident} key={resident}/>
             ))
           }
+        </div>
+        <div className='pagination'>
+          <button className='btn-pagination' onClick={() => setPage(page -1)} disabled={page === 1}>Prev page</button>
+          <p> {page} / {totalPages}</p>
+          <button className='btn-pagination' onClick={() => setPage(page + 1)} disabled={page >= totalPages}>Next page</button>
         </div>
       </div>
     </div>

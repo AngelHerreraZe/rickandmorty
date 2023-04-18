@@ -14,7 +14,7 @@ const ResidentInfo = ({resident}) => {
         <div className='card'>
             <div className='card-header'>
                 <img src={residentInfo.image} alt="" className='card-img' />
-                <p  className={`status`}><div className={`circle-${residentInfo.status}`}></div>{residentInfo.status}</p>
+                <p  className={`status`}><span className={`circle-${residentInfo.status}`}></span>{residentInfo.status}</p>
             </div>
             <div className='card-body'>
                 <p className='card-name'>{residentInfo.name}</p>
